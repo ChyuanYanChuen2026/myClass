@@ -1,11 +1,10 @@
 <script setup>
 import HelloView from './views/HelloView.vue';
-import Demo from './components/Demo1.vue';  
+import Demo from './components/Demo4.vue';  
 </script>
 
 <template>
-  <HelloView />
-
+  <!-- <HelloView /> -->
   <Demo />
 </template>
 
