@@ -12,6 +12,8 @@ import Content2 from '@/components/Content2.vue';
 import HelloView from '@/views/HelloView.vue';
 import NotFound from '@/views/NotFoundView.vue';
 import DemoList from '@/views/DemoListView.vue';
+import ScoreList from '@/views/ScoreView.vue';
+import TodoList from '@/views/TodoListView.vue';
 
 const routes = [
   { path: '/:pathMatch(.*)*', component: NotFound, name: 'NotFound' },
@@ -53,6 +55,16 @@ const routes = [
     path: '/demoList',
     component: DemoList,
     name: 'DemoList',
+  },
+  {
+    path: '/score',
+    component: ScoreList,
+    name: 'ScoreList',
+  },
+  {
+    path: '/todoList',
+    component: TodoList,
+    name: 'TodoList',
   },
 ];
 
