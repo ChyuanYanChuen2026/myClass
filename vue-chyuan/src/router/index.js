@@ -14,13 +14,17 @@ import NotFound from '@/views/NotFoundView.vue';
 import DemoList from '@/views/DemoListView.vue';
 import ScoreList from '@/views/ScoreView.vue';
 import TodoList from '@/views/TodoListView.vue';
+import Lifecycle from '@/views/LifecycleView.vue';
+import PropEmit from '@/views/ParentView.vue';
+import PokemonList from '@/views/PokemonListView.vue';
 
 const routes = [
   { path: '/:pathMatch(.*)*', component: NotFound, name: 'NotFound' },
   {
-    path: '/',
+    path: '/:id?',
     name: 'Home',
     component: HomeView,
+    props: true,
   },
   {
     path: '/about',
@@ -60,6 +64,21 @@ const routes = [
     path: '/score',
     component: ScoreList,
     name: 'ScoreList',
+  },
+  {
+    path: '/lifecycle',
+    component: Lifecycle,
+    name: 'Lifecycle',
+  },
+  {
+    path: '/parent',
+    component: PropEmit,
+    name: 'PropEmit',
+  },
+  {
+    path: '/pokemonList',
+    component: PokemonList,
+    name: 'PokemonList',
   },
   {
     path: '/todoList',

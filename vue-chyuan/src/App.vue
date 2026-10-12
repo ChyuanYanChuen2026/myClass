@@ -6,6 +6,7 @@
 </script>
 
 <template>
+ 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">VueClass</a>
@@ -20,27 +21,31 @@
         <RouterLink :to="{name:'Hello'}" class="nav-link">HelloPage</RouterLink>
         <RouterLink :to="{name:'BMI'}" class="nav-link">BMI計算</RouterLink>
         <RouterLink :to="{name:'ScoreList'}" class="nav-link">分數列表</RouterLink>
-        <RouterLink :to="{name:'ScoreList'}" class="nav-link">分數列表</RouterLink>
         <RouterLink :to="{name:'TodoList'}" class="nav-link">待辦清單</RouterLink>
+        <RouterLink :to="{name:'Lifecycle'}" class="nav-link">Vue生命週期</RouterLink>
+        <RouterLink :to="{name:'PropEmit'}" class="nav-link">父子組件</RouterLink>
+        <RouterLink :to="{name:'PokemonList'}" class="nav-link">寶可夢卡片(父子組件)</RouterLink>
         <RouterLink :to="{name:'DemoList'}" class="nav-link">DemoList</RouterLink>
       </div>
     </div>
   </div>
 </nav>
+<div class="container mt-5">
+  <!-- <p>
+    <RouterLink to="/">首頁</RouterLink> |
+    <RouterLink to="/about">關於</RouterLink>
+  </p> -->
 
-<!-- <p>
-  <RouterLink to="/">首頁</RouterLink> |
-  <RouterLink to="/about">關於</RouterLink>
-</p> -->
+  <div>
+    <RouterView />
+  </div>
 
-<div>
-  <RouterView />
 </div>
 </template>
 
 <style scoped>
 .highlight{
-  color: coral;
+  color: coral !important;
   font-size: 20px;
 }
 </style>

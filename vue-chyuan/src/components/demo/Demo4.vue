@@ -5,7 +5,6 @@ const btnStyle = reactive({
   color: 'red',
   backgroundColor: 'black',
   margin: '10px',
-  border: none
 });
 function increment() {
   count.value++;
