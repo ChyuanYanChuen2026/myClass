@@ -16,9 +16,11 @@ import Demo12 from '@/components/demo/Demo12.vue';
 import Demo13 from '@/components/demo/Demo13.vue';
 import Demo14 from '@/components/demo/Demo14.vue';
 import Demo15 from '@/components/demo/Demo15.vue';
+import Demo16 from '@/components/demo/Demo16.vue';
+import Demo17 from '@/components/demo/Demo17.vue';
 
-const DomeList = [Demo,Demo1,Demo2,Demo3,Demo4,Demo5,Demo6,Demo7,Demo8,Demo9,Demo10,Demo11,Demo12,Demo13,Demo14,Demo15]
-const selectIndex = ref(15);
+const DomeList = [Demo,Demo1,Demo2,Demo3,Demo4,Demo5,Demo6,Demo7,Demo8,Demo9,Demo10,Demo11,Demo12,Demo13,Demo14,Demo15,Demo16,Demo17]
+const selectIndex = ref(17);
 onBeforeMount(()=>{
   console.log('BeforeMount');
 });

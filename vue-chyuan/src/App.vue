@@ -26,6 +26,8 @@
         <RouterLink :to="{name:'PropEmit'}" class="nav-link">父子組件</RouterLink>
         <RouterLink :to="{name:'PokemonList'}" class="nav-link">寶可夢卡片(父子組件)</RouterLink>
         <RouterLink :to="{name:'DemoList'}" class="nav-link">DemoList</RouterLink>
+        <RouterLink :to="{name:'ShoppingCart'}" class="nav-link">購物車</RouterLink>
+        <RouterLink :to="{name:'PiniaShoppingCart'}" class="nav-link">Pinia購物車</RouterLink>
       </div>
     </div>
   </div>

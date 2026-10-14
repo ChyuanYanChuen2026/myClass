@@ -17,6 +17,8 @@ import TodoList from '@/views/TodoListView.vue';
 import Lifecycle from '@/views/LifecycleView.vue';
 import PropEmit from '@/views/ParentView.vue';
 import PokemonList from '@/views/PokemonListView.vue';
+import ShoppingCart from '@/views/ShoppingCartView.vue';
+import PiniaShoppingCart from '@/views/PiniaShoppingCartView.vue';
 
 const routes = [
   { path: '/:pathMatch(.*)*', component: NotFound, name: 'NotFound' },
@@ -84,6 +86,16 @@ const routes = [
     path: '/todoList',
     component: TodoList,
     name: 'TodoList',
+  },
+  {
+    path: '/shoppingCart',
+    component: ShoppingCart,
+    name: 'ShoppingCart',
+  },
+  {
+    path: '/piniaShoppingCart',
+    component: PiniaShoppingCart,
+    name: 'PiniaShoppingCart',
   },
 ];
 
